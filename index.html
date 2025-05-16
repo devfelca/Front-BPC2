@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portal do Associado - Observatório BPC</title>
+    <title>Apoio Familiar Digital</title>
     <meta name="description" content="Portal para associados do Observatório BPC - Acesse seus dados, documentos e faça doações" />
     <meta name="author" content="Observatório BPC" />
 
@@ -16,10 +16,22 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@observatoriobpc" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script type="module" crossorigin src="/Front-BPC2/assets/index-BLWwVnpu.js"></script>
+    <!-- Script para lidar com redirecionamento de rotas em SPA no GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/Front-BPC2/assets/index-B119YFXl.js"></script>
     <link rel="stylesheet" crossorigin href="/Front-BPC2/assets/index-1uCJQ_IO.css">
   </head>
-
   <body>
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
